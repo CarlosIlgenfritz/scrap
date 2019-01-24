@@ -80,6 +80,19 @@ var config = {
             
             
         }
+    },
+    tagora:{
+        url:'https://www.tempoagora.com.br/',
+        regras:{
+            campoBusca:"#search-term",
+            elementoClick:"#__layout > div > div.custom-header > header > nav > div.hidden-xs.hidden-sm.search-icon > div > div > div.results > ul:nth-child(3) > li:nth-child(1) > a",
+            elementTemp:"#__layout > div > div.custom-header > header > div.header-weather-info > div.header-weather-info__items > a > div.col-md-4.col-sm-4.col-xs-7 > div > span.weather-temperature--temperature",
+            sensacaoElement:"#__layout > div > div.custom-header > header > div.header-weather-info > div.header-weather-info__items > a > div.col-md-4.col-sm-4.text-right.hidden-sm.hidden-xs > div > ul:nth-child(2) > li:nth-child(1)",
+            ventoElement:"#__layout > div > div.custom-header > header > div.header-weather-info > div.header-weather-info__items > a > div.col-md-4.col-sm-4.text-right.hidden-sm.hidden-xs > div > ul:nth-child(2) > li:nth-child(2)",
+            pressaoElement:"#__layout > div > div.custom-header > header > div.header-weather-info > div.header-weather-info__items > a > div.col-md-4.col-sm-4.text-right.hidden-sm.hidden-xs > div > ul:nth-child(2) > li:nth-child(3)",
+            umidadeElement:"#__layout > div > div.custom-header > header > div.header-weather-info > div.header-weather-info__items > a > div.col-md-4.col-sm-4.text-right.hidden-sm.hidden-xs > div > ul:nth-child(2) > li:nth-child(4)"
+
+        }
     }
 }
 module.exports = config
