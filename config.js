@@ -1,9 +1,8 @@
-//metodo de uso:
 
 var config = {
     
     climatempo:
-    {  
+    {  site:'climatempo',        
         cidades:{
             rancharia:'https://www.climatempo.com.br/previsao-do-tempo/cidade/526/rancharia-sp',
             aquidauana:'https://www.climatempo.com.br/previsao-do-tempo/cidade/749/aquidauana-ms',
@@ -11,7 +10,7 @@ var config = {
             batatais:'https://www.climatempo.com.br/previsao-do-tempo/cidade/1466/batatais-sp',
             urucui:'https://www.climatempo.com.br/previsao-do-tempo/cidade/1297/urucui-pi',
             maracaju:'https://www.climatempo.com.br/previsao-do-tempo/cidade/1132/maracaju-ms',
-            abaiti:'https://www.climatempo.com.br/previsao-do-tempo/cidade/2646/ibaiti-pr',
+            ibaiti:'https://www.climatempo.com.br/previsao-do-tempo/cidade/2646/ibaiti-pr',
             riobrilhante:'https://www.climatempo.com.br/previsao-do-tempo/cidade/2765/riobrilhante-ms',
             pocone:'https://www.climatempo.com.br/previsao-do-tempo/cidade/4774/pocone-mt',
             cavalcante:'https://www.climatempo.com.br/previsao-do-tempo/cidade/2150/cavalcante-go',
@@ -28,13 +27,13 @@ var config = {
             umidadeElement:"#momento-humidade",
             pressaoElement:"#momento-pressao",
             ventoElement:"#momento-vento",
-            direcaoVent:"",
             chuvaElement:"#mega-destaque > div.master.bg-white.top5 > div > div.small-12.large-8.left.sticky2Equalizer > div:nth-child(5) > div:nth-child(1) > p",
             atualizadoA:"#momento-atualizacao"
         }
     },
     wunder:
     {
+        site:'wunder',
         cidades:{
             rancharia:'https://www.wunderground.com/weather/br/rancharia',
             capitanbado:'https://www.wunderground.com/weather/py/capit%C3%A1n-bado',
@@ -67,6 +66,7 @@ var config = {
 
     },
     yr:{
+        site:'yr',
         cidades:{
             rancharia:'https://www.yr.no/sted/Brasil/S%C3%A3o_Paulo/Rancharia/',
             mcmurdo:'https://www.yr.no/sted/Antarktika/Annet/McMurdo_Station/',
@@ -95,6 +95,7 @@ var config = {
         }
     },
     accu:{
+        site:'accu',
        cidades:{
            rancharia:'https://www.accuweather.com/pt/br/rancharia/41722/daily-weather-forecast/41722',
            mcmurdo:'https://www.accuweather.com/pt/aq/mcmurdo-station/2273718/daily-weather-forecast/2273718',
@@ -125,6 +126,7 @@ var config = {
         }
     },
     inmet:{
+        site:'inmet',
         url:'http://www.inmet.gov.br/portal/index.php?r=home2/index',
         regras:{
             campoBusca:"#search-heather",
@@ -140,6 +142,7 @@ var config = {
         }
     },
     tagora:{
+        site:'tagora',
        cidades:{
            rancharia:'https://www.tempoagora.com.br/previsao-do-tempo/SP/Rancharia',
            carazinho:'https://www.tempoagora.com.br/previsao-do-tempo/RS/Carazinho',
