@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const request = require('request')
 const puppeteer = require ('puppeteer')
 const config = require ('./config')
 const schedule = require ('node-schedule')
@@ -23,13 +24,23 @@ var cidade = [
     "mossoro",
     "naometoque"
     ]
-/*app.get('/',(req,res)=>res.send('hello word'))
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))*/
+
 let port = process.env.PORT
 if (port == null || port == "") {
   port = 3000
 }
-app.listen(port)
+app.listen(port,function(){
+    console.log("funcionou")
+})
+
+app.get('/',(req,res)=>{
+    var data = fs.readFileSync('./climatempo.json',"utf8",(err,data) =>{
+        return data
+    })
+    res.send(data)
+       
+    }
+)
 
 var j = schedule.scheduleJob(' 10 * * * *', function(){
 async function climatempo (config,cidade,siteEscolhido) {
