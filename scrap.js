@@ -82,7 +82,7 @@ async function climatempo (config,cidade,siteEscolhido) {
                 sensacao:sensacao,
                 chuva:chuva,
                 vento:vento,
-                momentoAtualizacao:momentoAtualizacao,
+                momentoAtualizacao:data,
                 Cidade:cidade[i],
                 Site:"Accuweather"
 
@@ -235,7 +235,7 @@ async function climatempo (config,cidade,siteEscolhido) {
                 pressao:pressao,
                 chuva:chuva,
                 vento:vento,
-                momentoAtualizacao:momentoAtualizacao,
+                momentoAtualizacao:data,
                 Cidade:cidade[i],
                 Site:"Climatempo"
                 
@@ -285,7 +285,7 @@ async function climatempo (config,cidade,siteEscolhido) {
                 pressao:pressao,
                 chuva:chuva,
                 vento:vento,
-                momentoAtualizacao:momentoAtualizacao,
+                momentoAtualizacao:data,
                 Cidade:cidade[i],
 
                 Site:"Wunderground"
